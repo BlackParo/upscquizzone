@@ -206,3 +206,13 @@ body.dark #next-btn{
 body.dark #progress-bar{
     background:#00e676;
 }
+#username{
+    width:100%;
+    padding:14px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    text-align:center;
+}
