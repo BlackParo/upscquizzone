@@ -10,7 +10,25 @@ let currentQuestionIndex = 0;
 let score = 0;
 let timeLeft = 30;
 let timer;
+let selectedCategory = "polity";
 
+const categoryCards = document.querySelectorAll(".category-card");
+
+categoryCards.forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        categoryCards.forEach(c => c.classList.remove("active"));
+
+        card.classList.add("active");
+
+        selectedCategory = card.dataset.category;
+
+        console.log("Selected Category:", selectedCategory);
+
+    });
+
+});
 function startQuiz(){
 
     currentQuestionIndex = 0;
