@@ -7,6 +7,7 @@ const timerElement = document.getElementById("timer");
 const progressBar = document.getElementById("progress-bar");
 
 let currentQuestionIndex = 0;
+let questions = [];
 let score = 0;
 let timeLeft = 30;
 let timer;
