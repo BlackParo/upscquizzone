@@ -163,3 +163,14 @@ nextButton.addEventListener("click",()=>{
 });
 
 startQuiz();
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        themeBtn.innerHTML = "☀️ Light Mode";
+    }else{
+        themeBtn.innerHTML = "🌙 Dark Mode";
+    }
+});
