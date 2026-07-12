@@ -25,7 +25,7 @@ function startQuiz(){
 
     showQuestion();
 }
-}
+
 
 function showQuestion(){
 
