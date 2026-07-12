@@ -162,3 +162,47 @@ h1{
     color:#ff3d00;
     margin-bottom:15px;
 }
+#theme-toggle{
+    float:right;
+    margin-bottom:15px;
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#222;
+    color:#fff;
+}
+
+body.dark{
+    background:#121212;
+}
+
+body.dark .quiz-container,
+body.dark .container{
+    background:#1e1e1e;
+    color:#fff;
+}
+
+body.dark #question,
+body.dark h2,
+body.dark h1,
+body.dark .tagline{
+    color:#fff;
+}
+
+body.dark .answer-btn{
+    background:#333;
+    color:#fff;
+}
+
+body.dark .answer-btn:hover{
+    background:#555;
+}
+
+body.dark #next-btn{
+    background:#0d6efd;
+}
+
+body.dark #progress-bar{
+    background:#00e676;
+}
