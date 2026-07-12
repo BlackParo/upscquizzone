@@ -216,3 +216,18 @@ body.dark #progress-bar{
     outline:none;
     text-align:center;
 }
+.watermark{
+    text-align:center;
+    margin-top:25px;
+    padding:15px 10px;
+    font-size:15px;
+    font-weight:600;
+    color:#ffffff;
+    letter-spacing:1px;
+    opacity:.9;
+    user-select:none;
+}
+
+body.dark .watermark{
+    color:#ffffff;
+    }
