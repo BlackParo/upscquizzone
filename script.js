@@ -33,7 +33,7 @@ function startQuiz(){
 
     currentQuestionIndex = 0;
     score = 0;
-
+questions = questionBank[selectedCategory];
     const username = localStorage.getItem("username");
 
     if(username){
