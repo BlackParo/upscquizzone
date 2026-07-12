@@ -12,9 +12,19 @@ let timeLeft = 30;
 let timer;
 
 function startQuiz(){
+
     currentQuestionIndex = 0;
     score = 0;
+
+    const username = localStorage.getItem("username");
+
+    if(username){
+        document.getElementById("welcome-user").textContent =
+        "👋 Welcome, " + username + "!";
+    }
+
     showQuestion();
+}
 }
 
 function showQuestion(){
@@ -137,8 +147,10 @@ function showScore(){
 
     timerElement.innerHTML="Completed";
 
-    questionElement.innerHTML=
-    `🎉 Congratulations!<br><br>Your Score : ${score}/${questions.length}`;
+    const username = localStorage.getItem("username") || "Player";
+
+questionElement.innerHTML =
+`🎉 Congratulations, <b>${username}</b>!<br><br>Your Score : ${score}/${questions.length}`;
 
     nextButton.innerHTML="Play Again";
 
