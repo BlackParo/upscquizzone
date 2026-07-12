@@ -6,7 +6,7 @@
 }
 
 body{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -18,6 +18,7 @@ body{
     max-width:420px;
     background:rgba(255,255,255,.15);
     backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
     border-radius:20px;
     padding:40px 25px;
     text-align:center;
@@ -34,6 +35,7 @@ h1{
     font-size:18px;
     margin-bottom:35px;
     opacity:.9;
+    line-height:1.6;
 }
 
 .start-btn{
@@ -44,7 +46,7 @@ h1{
     padding:15px 35px;
     border-radius:50px;
     font-weight:bold;
-    transition:.3s;
+    transition:all .3s ease;
 }
 
 .start-btn:hover{
@@ -52,7 +54,9 @@ h1{
     background:#ffe66d;
     color:#000;
 }
-@media (max-width: 480px) {
+
+@media (max-width:480px){
+
     .container{
         width:95%;
         padding:30px 20px;
