@@ -1,3 +1,24 @@
+const category = localStorage.getItem("category");
+
+let questions;
+
+if (category === "mixed") {
+
+    questions = [
+        ...allQuestions.polity,
+        ...allQuestions.history,
+        ...allQuestions.geography,
+        ...allQuestions.economy,
+        ...allQuestions.science,
+        ...allQuestions.environment,
+        ...allQuestions.current
+    ];
+
+} else {
+
+    questions = allQuestions[category];
+
+}
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
