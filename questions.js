@@ -183,17 +183,188 @@ const allQuestions = {
     }
 ],
 
-    history: [
-        {
-            question: "Who founded the Maurya Empire?",
-            answers: [
-                { text: "Chandragupta Maurya", correct: true },
-                { text: "Ashoka", correct: false },
-                { text: "Akbar", correct: false },
-                { text: "Harsha", correct: false }
-            ]
-        }
-    ],
+   history: [
+    {
+        question: "Who founded the Maurya Empire?",
+        answers: [
+            { text: "Chandragupta Maurya", correct: true },
+            { text: "Ashoka", correct: false },
+            { text: "Harsha", correct: false },
+            { text: "Samudragupta", correct: false }
+        ]
+    },
+    {
+        question: "Who was the founder of the Mughal Empire in India?",
+        answers: [
+            { text: "Akbar", correct: false },
+            { text: "Babur", correct: true },
+            { text: "Humayun", correct: false },
+            { text: "Sher Shah Suri", correct: false }
+        ]
+    },
+    {
+        question: "The Battle of Plassey was fought in:",
+        answers: [
+            { text: "1757", correct: true },
+            { text: "1761", correct: false },
+            { text: "1764", correct: false },
+            { text: "1857", correct: false }
+        ]
+    },
+    {
+        question: "Who gave the slogan 'Do or Die'?",
+        answers: [
+            { text: "Subhas Chandra Bose", correct: false },
+            { text: "Mahatma Gandhi", correct: true },
+            { text: "Jawaharlal Nehru", correct: false },
+            { text: "Sardar Patel", correct: false }
+        ]
+    },
+    {
+        question: "Who was known as the Iron Man of India?",
+        answers: [
+            { text: "Subhas Chandra Bose", correct: false },
+            { text: "Sardar Vallabhbhai Patel", correct: true },
+            { text: "Bhagat Singh", correct: false },
+            { text: "Jawaharlal Nehru", correct: false }
+        ]
+    },
+    {
+        question: "The First Battle of Panipat was fought in:",
+        answers: [
+            { text: "1526", correct: true },
+            { text: "1556", correct: false },
+            { text: "1761", correct: false },
+            { text: "1857", correct: false }
+        ]
+    },
+    {
+        question: "Who built the Qutub Minar?",
+        answers: [
+            { text: "Iltutmish", correct: false },
+            { text: "Qutb-ud-din Aibak", correct: true },
+            { text: "Alauddin Khilji", correct: false },
+            { text: "Balban", correct: false }
+        ]
+    },
+    {
+        question: "The Revolt of 1857 started from:",
+        answers: [
+            { text: "Delhi", correct: false },
+            { text: "Kanpur", correct: false },
+            { text: "Meerut", correct: true },
+            { text: "Lucknow", correct: false }
+        ]
+    },
+    {
+        question: "Who wrote the book 'Arthashastra'?",
+        answers: [
+            { text: "Kalidasa", correct: false },
+            { text: "Chanakya", correct: true },
+            { text: "Banabhatta", correct: false },
+            { text: "Panini", correct: false }
+        ]
+    },
+    {
+        question: "Ajanta Caves are located in:",
+        answers: [
+            { text: "Maharashtra", correct: true },
+            { text: "Madhya Pradesh", correct: false },
+            { text: "Odisha", correct: false },
+            { text: "Karnataka", correct: false }
+        ]
+    },
+    {
+        question: "Who was the last Governor-General of independent India?",
+        answers: [
+            { text: "Lord Mountbatten", correct: false },
+            { text: "C. Rajagopalachari", correct: true },
+            { text: "Wavell", correct: false },
+            { text: "Linlithgow", correct: false }
+        ]
+    },
+    {
+        question: "The Quit India Movement was launched in:",
+        answers: [
+            { text: "1930", correct: false },
+            { text: "1942", correct: true },
+            { text: "1947", correct: false },
+            { text: "1920", correct: false }
+        ]
+    },
+    {
+        question: "Who founded the Gupta Empire?",
+        answers: [
+            { text: "Samudragupta", correct: false },
+            { text: "Chandragupta I", correct: true },
+            { text: "Skandagupta", correct: false },
+            { text: "Kumaragupta", correct: false }
+        ]
+    },
+    {
+        question: "The famous Sun Temple is located at:",
+        answers: [
+            { text: "Khajuraho", correct: false },
+            { text: "Konark", correct: true },
+            { text: "Mahabalipuram", correct: false },
+            { text: "Madurai", correct: false }
+        ]
+    },
+    {
+        question: "Who was the founder of the Sikh religion?",
+        answers: [
+            { text: "Guru Gobind Singh", correct: false },
+            { text: "Guru Nanak", correct: true },
+            { text: "Guru Arjan Dev", correct: false },
+            { text: "Guru Tegh Bahadur", correct: false }
+        ]
+    },
+    {
+        question: "The Indian National Congress was founded in:",
+        answers: [
+            { text: "1885", correct: true },
+            { text: "1905", correct: false },
+            { text: "1919", correct: false },
+            { text: "1942", correct: false }
+        ]
+    },
+    {
+        question: "Who presided over the first session of the Indian National Congress?",
+        answers: [
+            { text: "A.O. Hume", correct: false },
+            { text: "W.C. Bonnerjee", correct: true },
+            { text: "Dadabhai Naoroji", correct: false },
+            { text: "B.G. Tilak", correct: false }
+        ]
+    },
+    {
+        question: "The capital of the Vijayanagara Empire was:",
+        answers: [
+            { text: "Hampi", correct: true },
+            { text: "Madurai", correct: false },
+            { text: "Warangal", correct: false },
+            { text: "Mysore", correct: false }
+        ]
+    },
+    {
+        question: "Who gave the slogan 'Jai Hind'?",
+        answers: [
+            { text: "Bhagat Singh", correct: false },
+            { text: "Subhas Chandra Bose", correct: true },
+            { text: "Mahatma Gandhi", correct: false },
+            { text: "Jawaharlal Nehru", correct: false }
+        ]
+    },
+    {
+        question: "The Indus Valley Civilization was discovered in:",
+        answers: [
+            { text: "1921", correct: true },
+            { text: "1911", correct: false },
+            { text: "1935", correct: false },
+            { text: "1947", correct: false }
+        ]
+    }
+],
 
     geography: [
         {
