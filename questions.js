@@ -1,92 +1,87 @@
-const questions = [
-{
-    question: "India ka Constitution kab lagu hua tha?",
-    answers: [
-        { text: "15 August 1947", correct: false },
-        { text: "26 January 1950", correct: true },
-        { text: "26 November 1949", correct: false },
-        { text: "2 October 1950", correct: false }
+const allQuestions = {
+
+    polity: [
+        {
+            question: "Who is the Constitutional Head of India?",
+            answers: [
+                { text: "President", correct: true },
+                { text: "Prime Minister", correct: false },
+                { text: "Chief Justice", correct: false },
+                { text: "Governor", correct: false }
+            ]
+        }
+    ],
+
+    history: [
+        {
+            question: "Who founded the Maurya Empire?",
+            answers: [
+                { text: "Chandragupta Maurya", correct: true },
+                { text: "Ashoka", correct: false },
+                { text: "Akbar", correct: false },
+                { text: "Harsha", correct: false }
+            ]
+        }
+    ],
+
+    geography: [
+        {
+            question: "Which is the largest desert in India?",
+            answers: [
+                { text: "Thar Desert", correct: true },
+                { text: "Sahara Desert", correct: false },
+                { text: "Gobi Desert", correct: false },
+                { text: "Kalahari Desert", correct: false }
+            ]
+        }
+    ],
+
+    economy: [
+        {
+            question: "RBI stands for?",
+            answers: [
+                { text: "Reserve Bank of India", correct: true },
+                { text: "Rural Bank of India", correct: false },
+                { text: "Revenue Bank of India", correct: false },
+                { text: "Reserve Board of India", correct: false }
+            ]
+        }
+    ],
+
+    science: [
+        {
+            question: "Water boils at?",
+            answers: [
+                { text: "100°C", correct: true },
+                { text: "90°C", correct: false },
+                { text: "80°C", correct: false },
+                { text: "120°C", correct: false }
+            ]
+        }
+    ],
+
+    environment: [
+        {
+            question: "Which gas causes global warming the most?",
+            answers: [
+                { text: "Carbon Dioxide", correct: true },
+                { text: "Oxygen", correct: false },
+                { text: "Nitrogen", correct: false },
+                { text: "Hydrogen", correct: false }
+            ]
+        }
+    ],
+
+    current: [
+        {
+            question: "What is India's capital city?",
+            answers: [
+                { text: "New Delhi", correct: true },
+                { text: "Mumbai", correct: false },
+                { text: "Kolkata", correct: false },
+                { text: "Chennai", correct: false }
+            ]
+        }
     ]
-},
-{
-    question: "Indian Constitution ka Father kise kaha jata hai?",
-    answers: [
-        { text: "Jawaharlal Nehru", correct: false },
-        { text: "Sardar Patel", correct: false },
-        { text: "Dr. B. R. Ambedkar", correct: true },
-        { text: "Rajendra Prasad", correct: false }
-    ]
-},
-{
-    question: "India ka National Animal kya hai?",
-    answers: [
-        { text: "Lion", correct: false },
-        { text: "Tiger", correct: true },
-        { text: "Elephant", correct: false },
-        { text: "Leopard", correct: false }
-    ]
-},
-{
-    question: "Lok Sabha ka maximum term kitna hota hai?",
-    answers: [
-        { text: "4 Years", correct: false },
-        { text: "5 Years", correct: true },
-        { text: "6 Years", correct: false },
-        { text: "7 Years", correct: false }
-    ]
-},
-{
-    question: "UNO ka Headquarters kahan hai?",
-    answers: [
-        { text: "Geneva", correct: false },
-        { text: "London", correct: false },
-        { text: "New York", correct: true },
-        { text: "Paris", correct: false }
-    ]
-},
-{
-    question: "Indian National Anthem kisne likha?",
-    answers: [
-        { text: "Bankim Chandra", correct: false },
-        { text: "Rabindranath Tagore", correct: true },
-        { text: "Subhash Chandra Bose", correct: false },
-        { text: "Sarojini Naidu", correct: false }
-    ]
-},
-{
-    question: "Earth ka sabse bada ocean kaunsa hai?",
-    answers: [
-        { text: "Atlantic Ocean", correct: false },
-        { text: "Indian Ocean", correct: false },
-        { text: "Pacific Ocean", correct: true },
-        { text: "Arctic Ocean", correct: false }
-    ]
-},
-{
-    question: "India ka National Bird kya hai?",
-    answers: [
-        { text: "Peacock", correct: true },
-        { text: "Parrot", correct: false },
-        { text: "Sparrow", correct: false },
-        { text: "Eagle", correct: false }
-    ]
-},
-{
-    question: "Fundamental Rights kis Part me diye gaye hain?",
-    answers: [
-        { text: "Part II", correct: false },
-        { text: "Part III", correct: true },
-        { text: "Part IV", correct: false },
-        { text: "Part V", correct: false }
-    ]
-},
-{
-    question: "भारत का सबसे बड़ा राज्य (क्षेत्रफल के अनुसार) कौन सा है?",
-    answers: [
-        { text: "उत्तर प्रदेश", correct: false },
-        { text: "राजस्थान", correct: true },
-        { text: "मध्य प्रदेश", correct: false },
-        { text: "महाराष्ट्र", correct: false }
-    ]
-}
-];
+
+};
