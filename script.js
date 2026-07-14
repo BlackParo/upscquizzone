@@ -173,15 +173,34 @@ const percentage = Math.round((score / questions.length) * 100);
 let leaderboard =
 JSON.parse(localStorage.getItem("leaderboard")) || [];
 
-leaderboard.push({
-    username,
-    category,
-    score,
-    total: questions.length,
-    percentage
-});
+const existingPlayer = leaderboard.find(
+    player =>
+        player.username === username &&
+        player.category === category
+);
 
-localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
+if (!existingPlayer) {
+
+    leaderboard.push({
+        username,
+        category,
+        score,
+        total: questions.length,
+        percentage
+    });
+
+} else if (score > existingPlayer.score) {
+
+    existingPlayer.score = score;
+    existingPlayer.total = questions.length;
+    existingPlayer.percentage = percentage;
+
+}
+
+localStorage.setItem(
+    "leaderboard",
+    JSON.stringify(leaderboard)
+);
 questionElement.innerHTML =
 `🎉 Congratulations, <b>${username}</b>!<br><br>Your Score : ${score}/${questions.length}`;
 
