@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard | UPSC Quiz Zone</title>
+
+    <link rel="stylesheet" href="leaderboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🏆 UPSC Quiz Zone Leaderboard</h1>
+
+    <div class="top-buttons">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search Username">
+
+        <select id="filter">
+
+            <option value="All">All Categories</option>
+            <option value="polity">Polity</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+            <option value="economy">Economy</option>
+            <option value="science">Science</option>
+            <option value="environment">Environment</option>
+            <option value="current">Current Affairs</option>
+            <option value="mixed">Mixed</option>
+
+        </select>
+
+    </div>
+
+    <!-- Top 3 -->
+
+    <div class="top3">
+
+        <div class="card silver">
+            <h2>🥈</h2>
+            <h3 id="second-name">---</h3>
+            <p id="second-score">0</p>
+        </div>
+
+        <div class="card gold">
+            <h2>🥇</h2>
+            <h3 id="first-name">---</h3>
+            <p id="first-score">0</p>
+        </div>
+
+        <div class="card bronze">
+            <h2>🥉</h2>
+            <h3 id="third-name">---</h3>
+            <p id="third-score">0</p>
+        </div>
+
+    </div>
+
+    <!-- Table -->
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Score</th>
+            <th>%</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="leaderboard-body">
+
+        </tbody>
+
+    </table>
+
+    <div class="buttons">
+
+        <button onclick="location.href='index.html'">
+            🏠 Home
+        </button>
+
+        <button id="clearBtn">
+            🗑 Clear Leaderboard
+        </button>
+
+    </div>
+
+</div>
+
+<script src="leaderboard.js"></script>
+
+</body>
+</html>
