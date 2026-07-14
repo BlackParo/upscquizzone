@@ -168,28 +168,43 @@ function showScore(){
     timerElement.innerHTML="Completed";
 
     const username = localStorage.getItem("username") || "Player";
+const percentage = Math.round((score / questions.length) * 100);
 
+let leaderboard =
+JSON.parse(localStorage.getItem("leaderboard")) || [];
+
+leaderboard.push({
+    username,
+    category,
+    score,
+    total: questions.length,
+    percentage
+});
+
+localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
 questionElement.innerHTML =
 `🎉 Congratulations, <b>${username}</b>!<br><br>Your Score : ${score}/${questions.length}`;
 
-    nextButton.innerHTML="Play Again";
+    nextButton.innerHTML = "🏆 Leaderboard";
 
     nextButton.style.display="block";
 
 }
 
-nextButton.addEventListener("click",()=>{
+nextButton.addEventListener("click", () => {
+
+    // Agar quiz complete ho gaya hai
+    if (currentQuestionIndex >= questions.length - 1 && nextButton.innerHTML === "🏆 Leaderboard") {
+        window.location.href = "leaderboard.html";
+        return;
+    }
 
     currentQuestionIndex++;
 
-    if(currentQuestionIndex<questions.length){
-
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
-
-    }else{
-
+    } else {
         showScore();
-
     }
 
 });
